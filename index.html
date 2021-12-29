@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  
+    
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#nav-head">
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="nav-head">
       <div class="container">
         <!-- lOGO -->
         <a href="#" class="navbar-brand">Portfolio</a>
@@ -26,11 +28,11 @@
         <!-- Navbar Navigation -->
         <div class="navbar-collapse collapse" id="navigation">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#interests" class="nav-link">Interests</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -51,7 +53,7 @@
       <h6 class="fs-3 text-secondary text-capitalize mb-4 text-light">
         I'm a professional Software Developer
       </h6>
-      <a href="" class="btn btn-danger rounded-pill">About me</a>
+      <a href="#about" class="btn btn-danger rounded-pill">About me</a>
     </section>
 
     <!-- About Section------------- -->
@@ -126,8 +128,120 @@
                 <h2 class="fw-bolder text-uppercase display-5 ">MY PORTFOLIO</h2>
                 <p >I've worked with several technologies and built several applications and websites.</p>
             </div>
+            <!-- Row with projects -->
+            <div class="row">
+                <div class="col-md-6 col-lg-4  mb-4">
+                    <img src="/images/calculator.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <img src="/images/MUSIC APP.png" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <img src="/images/img1.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <img src="/images/img5.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <img src="/images/img6.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <img src="/images/img7.jpg" alt="" class="img-fluid img-thumbnail">
+                </div>
+            </div>
         </div>
     </section>
+
+
+    <!-- INTERESTS SECTION -->
+    <section id="interests" class="container py-5">
+        <div class="text-center py-5">
+            <h2 class="fw-bolder text-upppercase">My Interests</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quis.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <img src="/images/img7.jpg" alt="" class="card-image-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">My interest in Sports</h5>
+                        <div class="card-text">I've played Soccer for about 8 years in total. During my free time, I like to play with my friends and neighbors</div>
+                       
+                    </div>
+                    <a href="#" class="btn btn-sm btn-light">Read More..</a>
+                    <div class="card-footer"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <img src="/images/img5.jpg" alt="" class="card-image-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">My Book Collection</h5>
+                        <div class="card-text">I've played Soccer for about 8 years in total. During my free time, I like to play with my friends and neighbors</div>
+                       
+                    </div>
+                    <a href="#" class="btn btn-sm btn-light">Read More..</a>
+                    <div class="card-footer"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <img src="/images/img1.jpg" alt="" class="card-image-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">I play drums</h5>
+                        <div class="card-text">I've played Soccer for about 8 years in total. During my free time, I like to play with my friends and neighbors</div>
+                       
+                    </div>
+                    <a href="#" class="btn btn-sm btn-light">Read More..</a>
+                    <div class="card-footer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact section -->
+    <section id="contact" class="bg-dark py-5">
+        <div class="container">
+            <div class="text-center py-5 text-light">
+                <h2 class="fw-bolder text-uppercase display-5 ">Contact Me</h2>
+                <p >Please write me a message or connect with me on social media</p>
+            </div>
+            <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-8 col-xxl-7 mx-auto">
+                <form action="" class="text-light">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <input type="text-area" class="form-control">
+                    </div>
+                    <button class="btn btn-danger">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="bg-light">
+        <div class="container text-center">
+            <p class="mb-0 py-3 fs-5" id="footer-text"> @ All rights reserved by <a href="#" class="text-danger text-decoration-none">Eleazer</a></p>
+        </div>
+    </footer>
     <script src="bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
